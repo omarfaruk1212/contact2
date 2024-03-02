@@ -1,0 +1,238 @@
+/* font-family: "Poppins", sans-serif; */
+
+:root{
+    --text-h:#191a15;
+    --text-p:#a6a6a6;
+    --theme:#52bd94;
+    --body: #00151e;
+    --white:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow: hidden;
+    font-family: inter;
+}
+
+ul, li{
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: Poppins;
+}
+
+.row{
+    --bs-gutter-x:4rem;
+}
+
+/* herder area  */
+.herder{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+
+}
+.header-logo img{
+    max-width: 100%;
+    font-size: 25px;
+    display: flex;
+
+}
+.header-nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-right: 100px;
+}
+.header-nav .items{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+
+} 
+
+.header-nav .items .item .link{
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-p);
+    transition: all 0.3s linear;
+}
+
+.header-nav .items .item .link:hover{
+    color: var(--theme);
+}
+
+.header-nav .custom-btn a{
+    padding: 14px 30px;
+    background: var(--theme);
+    border-radius: 10px;
+    border: 1px solid var(--theme);
+    transition: all .3s linear;
+    color: var(--white);
+    font-weight: 600;
+}
+.header-nav .custom-btn a:hover {
+    background:transparent;
+    color: var(--text-p);
+}
+
+/* contact start*/
+
+.container{
+     width: 80%;
+    margin: auto;
+      
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.col-md-6{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.contact__left--text h4{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--text-p);
+
+}
+
+.contact__left--text h2{
+    margin-top: 14px;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 44px;
+    color: var(--text-h);
+}
+
+.contact__left--text p{
+    margin-top: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-p);
+}
+.contact__left--form{
+    margin-top: 50px;
+     display: grid; 
+    gap: 20px;
+    width: 80%;
+}
+
+.contact__left--form .group{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__left--form .group input,
+.contact__left--form .group textarea{
+    display: block;
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 6px;
+    background: transparent;
+    border: 1px solid #d1d5db;
+    color: var(--text-p);
+}
+
+.contact__left--form .group input:focus-within,
+.contact__left--form .group textarea:focus-within{
+    outline: none;
+    border: 1px solid var(--theme);
+}
+
+.contact__left--form .custom-btn{
+    margin-top: 20px;
+}
+
+.contact__left--form .custom-btn a{
+    padding: 14px 30px;
+    border-radius: 10px;
+    background: var(--theme);
+    border: 1px solid var(--theme);
+    transition: all .3s linear;
+    color: var(--white);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.contact__left--form .custom-btn a:hover{
+    background: transparent;
+    color: var(--text-p);
+}
+
+
+ .contact__right--text h2{
+    font-size:36px;
+    font-style: normal;
+    margin-top: 20px;
+    font-weight: 600;
+    line-height:44px;
+    color: var(--text-h);
+}
+.contact__right--text p{
+    font-size:16px;
+    font-style: normal;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height:24px;
+    color: var(--text-p);
+}
+.contact__right--items{
+    margin-top: 4px;
+    display: grid;
+    gap: 30px;
+}
+.contact__right--items .item{
+    display: flex;
+    gap: 20px;
+}
+.contact__right--items .item .icon{
+    width: 60px;
+    height: 60px;
+    background: var(--white);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  box-shadow:0px 4px 9px 0px rgba(0,0,0,0.05);
+}
+
+.contact__right--items  .item .text h3{
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px;
+}
+.contact__right--items  .item .text p{
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-p);
+}
+/* contact end*/
